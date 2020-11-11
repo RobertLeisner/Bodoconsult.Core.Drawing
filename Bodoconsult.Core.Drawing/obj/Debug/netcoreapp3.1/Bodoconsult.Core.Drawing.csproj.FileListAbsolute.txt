@@ -1,0 +1,7 @@
+D:\Daten\Projekte\Tools\Bodoconsult.Core.Drawing\Bodoconsult.Core.Drawing\bin\Debug\netcoreapp3.1\Bodoconsult.Core.Drawing.deps.json
+D:\Daten\Projekte\Tools\Bodoconsult.Core.Drawing\Bodoconsult.Core.Drawing\bin\Debug\netcoreapp3.1\Bodoconsult.Core.Drawing.dll
+D:\Daten\Projekte\Tools\Bodoconsult.Core.Drawing\Bodoconsult.Core.Drawing\obj\Debug\netcoreapp3.1\Bodoconsult.Core.Drawing.csprojAssemblyReference.cache
+D:\Daten\Projekte\Tools\Bodoconsult.Core.Drawing\Bodoconsult.Core.Drawing\bin\Debug\netcoreapp3.1\Bodoconsult.Core.Drawing.pdb
+D:\Daten\Projekte\Tools\Bodoconsult.Core.Drawing\Bodoconsult.Core.Drawing\obj\Debug\netcoreapp3.1\Bodoconsult.Core.Drawing.csproj.CoreCompileInputs.cache
+D:\Daten\Projekte\Tools\Bodoconsult.Core.Drawing\Bodoconsult.Core.Drawing\obj\Debug\netcoreapp3.1\Bodoconsult.Core.Drawing.dll
+D:\Daten\Projekte\Tools\Bodoconsult.Core.Drawing\Bodoconsult.Core.Drawing\obj\Debug\netcoreapp3.1\Bodoconsult.Core.Drawing.pdb

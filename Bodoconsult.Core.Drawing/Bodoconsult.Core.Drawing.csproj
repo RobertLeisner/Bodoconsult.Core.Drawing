@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Deterministic>False</Deterministic>
+    <RepositoryUrl>https://github.com/RobertLeisner/Bodoconsult.Core.Drawing</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageId>Bodoconsult.Core.Drawing</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Robert Leisner</Authors>
+    <Company>Bodoconsult EDV-Dienstleistungen GmbH</Company>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>System.Drawing image thumbnail manipulation</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Library for simple image manipulation like creating thumbnails or resizing images</Description>
+    <PackageReleaseNotes>First draft.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
+</Project>

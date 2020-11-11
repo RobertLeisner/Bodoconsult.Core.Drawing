@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "q6bg4Ku5QICrA5sYQAUadwvpBWYUnBd4YWF+BywjncReU7rbwhMQ2Kj23SR1L+9ra0C6z/jhMuq4BG6rq6LZqA==",
+  "success": true,
+  "projectFilePath": "D:\\Daten\\Projekte\\Tools\\Bodoconsult.Core.Drawing\\Bodoconsult.Core.Drawing\\Bodoconsult.Core.Drawing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rleisner\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\rleisner\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\rleisner\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
