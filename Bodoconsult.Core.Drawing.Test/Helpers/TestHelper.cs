@@ -11,7 +11,9 @@ namespace Bodoconsult.Core.Drawing.Test.Helpers
     public static class TestHelper
     {
 
-        private static string testFolder;
+        public const string TargetFolder = @"D:\temp\";
+
+        private static string _testFolder;
 
         /// <summary>
         /// Get the folder of the current test data
@@ -20,13 +22,13 @@ namespace Bodoconsult.Core.Drawing.Test.Helpers
         public static string GetTestDataFolder()
         {
 
-            if (!string.IsNullOrEmpty(testFolder)) return testFolder;
+            if (!string.IsNullOrEmpty(_testFolder)) return _testFolder;
 
             var dir = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)).Parent.Parent.Parent;
 
-            testFolder = Path.Combine(dir.FullName, "TestData");
+            _testFolder = Path.Combine(dir.FullName, "TestData");
 
-            return testFolder;
+            return _testFolder;
         }
 
 

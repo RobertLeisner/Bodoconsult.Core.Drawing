@@ -1267,7 +1267,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Bodoconsult.Core.Drawing/1.0.0": {
+      "Bodoconsult.Core.Drawing/1.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -4709,7 +4709,7 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Bodoconsult.Core.Drawing/1.0.0": {
+    "Bodoconsult.Core.Drawing/1.0.2": {
       "type": "project",
       "path": "../Bodoconsult.Core.Drawing/Bodoconsult.Core.Drawing.csproj",
       "msbuildProject": "../Bodoconsult.Core.Drawing/Bodoconsult.Core.Drawing.csproj"
@@ -4717,7 +4717,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Bodoconsult.Core.Drawing >= 1.0.0",
+      "Bodoconsult.Core.Drawing >= 1.0.2",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.17.0",

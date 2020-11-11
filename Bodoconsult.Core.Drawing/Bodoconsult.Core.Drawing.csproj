@@ -7,22 +7,18 @@
     <RepositoryUrl>https://github.com/RobertLeisner/Bodoconsult.Core.Drawing</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageId>Bodoconsult.Core.Drawing</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.2</Version>
     <Authors>Robert Leisner</Authors>
     <Company>Bodoconsult EDV-Dienstleistungen GmbH</Company>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>System.Drawing image thumbnail manipulation</PackageTags>
+    <PackageTags>System.Drawing image thumbnail manipulation OpenGraph</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Library for simple image manipulation like creating thumbnails or resizing images</Description>
-    <PackageReleaseNotes>First draft.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added classes ImageWriter, ImageHelper and OpenGraphHelper</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Helpers\" />
   </ItemGroup>
 
 </Project>

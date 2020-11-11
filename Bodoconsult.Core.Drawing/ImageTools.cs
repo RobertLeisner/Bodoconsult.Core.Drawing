@@ -51,7 +51,7 @@ namespace Bodoconsult.Core.Drawing
 
                 if (new FileInfo(thumbFileName).Exists) return;
 
-                var service = new BitmapSevice();
+                var service = new BitmapService();
                 service.LoadBitmap(fi.FullName);
 
 
@@ -91,7 +91,7 @@ namespace Bodoconsult.Core.Drawing
             try
             {
 
-                var service = new BitmapSevice();
+                var service = new BitmapService();
                 service.LoadBitmap(fi.FullName);
 
                 if (fi.Length <= maxImageSize)

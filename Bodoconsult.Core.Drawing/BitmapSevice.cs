@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.IO;
+using Bodoconsult.Core.Drawing.Helpers;
 
 namespace Bodoconsult.Core.Drawing
 {
@@ -10,7 +11,7 @@ namespace Bodoconsult.Core.Drawing
     /// <summary>
     /// Service class for working with bitmap images
     /// </summary>
-    public class BitmapSevice : IDisposable
+    public class BitmapService : IDisposable
     {
 
         /// <summary>
@@ -125,21 +126,7 @@ namespace Bodoconsult.Core.Drawing
         }
 
 
-        //=== get encoder info
-        private static ImageCodecInfo GetEncoderInfo(string mimeType)
-        {
-            var encoders = ImageCodecInfo.GetImageEncoders();
 
-            for (var j = 0; j < encoders.Length; ++j)
-            {
-                if (encoders[j].MimeType.ToLower() == mimeType.ToLower())
-                {
-                    return encoders[j];
-                }
-            }
-
-            return null;
-        }
 
 
         //=== determine image rotation
@@ -475,9 +462,7 @@ namespace Bodoconsult.Core.Drawing
         /// <param name="fullPath">full file name of the target file</param>
         public void SaveAsPng(string fullPath)
         {
-
-            Bitmap.Save(fullPath, ImageFormat.Png);
-
+            ImageHelper.SaveAsPng(Bitmap, fullPath);
         }
 
         /// <summary>
@@ -488,29 +473,35 @@ namespace Bodoconsult.Core.Drawing
         public void SaveAsJpeg(string fullPath, uint compressionLevel = 80)
         {
 
-            //save the image to a memorystream to apply the compression level
-            var jpgEncoder = GetEncoderInfo("image/jpeg");
-            using (var ms = new MemoryStream())
-            {
-                //var encoderParameters = new EncoderParameters(1);
-                //encoderParameters.Param[0] = new EncoderParameter(Encoder.Quality, (byte)compressionLevel);
 
-                var encoderParameters = new EncoderParameters(1);
-                encoderParameters.Param[0] = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, compressionLevel);
+            ImageHelper.SaveAsJpeg(Bitmap, fullPath, compressionLevel);
 
-                Bitmap.Save(ms, jpgEncoder, encoderParameters);
 
-                //save the image as byte array here if you want the return type to be a Byte Array instead of Image
-                //byte[] imageAsByteArray = ms.ToArray();
+            ////save the image to a memorystream to apply the compression level
+            //var jpgEncoder = ImageHelper.GetEncoderInfo("image/jpeg");
+            //using (var ms = new MemoryStream())
+            //{
+            //    //var encoderParameters = new EncoderParameters(1);
+            //    //encoderParameters.Param[0] = new EncoderParameter(Encoder.Quality, (byte)compressionLevel);
 
-                //write to file
-                var file = new FileStream(fullPath, FileMode.Create, FileAccess.Write);
-                ms.WriteTo(file);
-                file.Close();
-                ms.Close();
-                file.Dispose();
-                ms.Dispose();
-            }
+            //    var encoderParameters = new EncoderParameters(1)
+            //    {
+            //        Param = {[0] = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, compressionLevel)}
+            //    };
+
+            //    Bitmap.Save(ms, jpgEncoder, encoderParameters);
+
+            //    //save the image as byte array here if you want the return type to be a Byte Array instead of Image
+            //    //byte[] imageAsByteArray = ms.ToArray();
+
+            //    //write to file
+            //    var file = new FileStream(fullPath, FileMode.Create, FileAccess.Write);
+            //    ms.WriteTo(file);
+            //    file.Close();
+            //    ms.Close();
+            //    file.Dispose();
+            //    ms.Dispose();
+            //}
 
         }
 

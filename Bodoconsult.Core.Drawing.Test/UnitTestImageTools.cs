@@ -76,7 +76,7 @@ namespace Bodoconsult.Core.Drawing.Test
 
             // Arrange
             var source = Path.Combine(TestHelper.GetTestDataFolder(), "DSC_0187.JPG");
-            
+
 
             const int width = 500;
             const int maxSize = 1000000;

@@ -7,12 +7,12 @@ namespace Bodoconsult.Core.Drawing.Test
 {
     public class UnitTestBitmapService
     {
-        private BitmapSevice _service;
+        private BitmapService _service;
 
         [SetUp]
         public void Setup()
         {
-            _service = new BitmapSevice();
+            _service = new BitmapService();
         }
 
 
